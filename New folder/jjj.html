@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRT Coach Builders</title>
+</head>
+<body>
+    
+
+<link rel="stylesheet" href="style.css">
+<nav class="nav">
+    <div class="container">
+        <div class="logo">
+            <img src="images-removebg-preview (1).png" style="width:80px">
+        </div>
+        <div id="mainListDiv" class="main_list">
+            <ul class="navlinks">
+                <li><a href="#about">About</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="http://127.0.0.1:3000/New folder/login112212.html">Signup</a></li>
+                <li><a href="http://127.0.0.1:3000/New folder/appt.html">Book appt</a></li>
+                <li><a href="http://127.0.0.1:3000/New%20folder/contact%20us%20.html">Contact</a></li>
+            </ul>
+        </div>
+        <span class="navTrigger">
+            <i></i>
+            <i></i>
+            <i></i>
+        </span>
+    </div>
+</nav>
+
+<section class="home">
+</section>
+<div style="height: 1000px" id="about">
+    <!-- just to make scrolling effect possible -->
+        <h2 class="myH2">What is <div><img src="images-removebg-preview (1).png" style="width:80px;"></div></h2>
+        <p class="myP">This is a maxicab manufacturing company for tourism. </p>
+       
+        <p class="myP">I HOPE YOU FIND THIS USEFULL</p>
+        <p class="myP"></p>
+            <p class="myP">
+                In 2016 the founder of GRT coach ,A.Ganesh started the company.In that time a company named Joy coach was the leading company in Karur.In 2020 our company reched the position of 2nd in Karur.We aer famous for our quality and our best service and widely known for our painting.We use onlu high quality paints.we are very concious in our quality . We won't compremise in the quality.Still we aer going on successfully.
+                <br><br><br><br><b>Methods</b><br><br>if you place a order to us ,you have two choises. One is key to key and the other one is standerd.
+
+                Key to Key
+                It is thing such as video and audio systems are selected and installed by us,including painting.
+                It may cost around 9 lakhs - 10.
+                
+                Standerd
+                In stander we will privide the essentilas and standerd things. The sound sysrem and video system
+                and paintings are decided by the costemers.
+                It may cost around 7-7.5lakhs.
+                 </p>
+</div>
+
+<!-- Jquery needed -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="js/scripts.js"></script>
+
+<!-- Function used to shrink nav bar removing paddings and adding black background -->
+<script>
+    $(window).scroll(function() {
+        if ($(document).scrollTop() > 50) {
+            $('.nav').addClass('affix');
+            console.log("OK");
+        } else {
+            $('.nav').removeClass('affix');
+        }
+    });
+</script>
+<script>
+    $('.navTrigger').click(function () {
+    $(this).toggleClass('active');
+    console.log("Clicked menu");
+    $("#mainListDiv").toggleClass("show_list");
+    $("#mainListDiv").fadeIn();
+
+});
+</script>
+</body>
+</html>
